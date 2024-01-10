@@ -25,12 +25,12 @@ Get states from NMT eModul API https://emodul.eu/docs/api-v1.txt
 -->
 
 ### **WORK IN PROGRESS**
-* (Norman Redenz) initial release
+* (NeRo0311) initial release
 
 ## License
 MIT License
 
-Copyright (c) 2024 Norman Redenz <norman@redenz.eu>
+Copyright (c) 2024 NeRo0311 <norman@redenz.eu>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

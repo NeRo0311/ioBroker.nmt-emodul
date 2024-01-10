@@ -1,16 +1,38 @@
 {
-	"i18n": true,
-	"type": "panel",
-	"items": {
-		"option1": {
-			"type": "checkbox",
-			"label": "option1",
-			"newLine": true
-		},
-		"option2": {
-			"type": "text",
-			"label": "option2",
-			"newLine": true
-		}
-	}
+    "i18n": true,
+    "type": "tabs",
+    "items": {
+        "_options": {
+            "type": "panel",
+            "label": "Options",
+            "items": {
+                "userId": {
+                    "type": "text",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "label": "User ID",
+                    "help": "Enter your user ID"
+                },
+                "token": {
+                    "newLine": true,
+                    "type": "text",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "label": "Token",
+                    "help": "Enter your generated token"
+                },
+                "heaterUdid": {
+                    "newLine": true,
+                    "type": "text",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "label": "Heater UDID",
+                    "help": "Enter your heater UDID"
+                }
+            }
+        }
+    }
 }
