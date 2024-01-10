@@ -1,0 +1,110 @@
+{
+	"common": {
+		"name": "nmt-emodul",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "NMT eModul",
+		"titleLang": {
+			"en": "NMT eModul",
+			"de": "NMT eModul",
+			"ru": "НМТ eМодуль",
+			"pt": "Módulo eletrônico NMT",
+			"nl": "NMT eModul",
+			"fr": "eModule NMT",
+			"it": "Modulo elettronico NMT",
+			"es": "Módulo electrónico NMT",
+			"pl": "eModul NMT",
+			"uk": "NMT eModul",
+			"zh-cn": "NMT e模块"
+		},
+		"desc": {
+			"en": "Get states from eModul API https://emodul.eu/docs/api-v1.txt",
+			"de": "Erhalten Sie Zustände von der eModul-API https://emodul.eu/docs/api-v1.txt",
+			"ru": "Получите состояния из API eModul https://emodul.eu/docs/api-v1.txt",
+			"pt": "Obtenha estados da API eModul https://emodul.eu/docs/api-v1.txt",
+			"nl": "Haal statussen op van de eModul API https://emodul.eu/docs/api-v1.txt",
+			"fr": "Obtenez les états de l'API eModul https://emodul.eu/docs/api-v1.txt",
+			"it": "Ottieni gli stati dall'API eModul https://emodul.eu/docs/api-v1.txt",
+			"es": "Obtenga estados de la API de eModul https://emodul.eu/docs/api-v1.txt",
+			"pl": "Pobieraj stany z eModul API https://emodul.eu/docs/api-v1.txt",
+			"uk": "Отримати стани з eModul API https://emodul.eu/docs/api-v1.txt",
+			"zh-cn": "从 eModul API 获取状态 https://emodul.eu/docs/api-v1.txt"
+		},
+		"authors": [
+			"Norman Redenz <norman@redenz.eu>"
+		],
+		"keywords": [
+			"heater",
+			"pellet"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "nmt-emodul.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/NeRo0311/ioBroker.nmt-emodul/main/admin/nmt-emodul.png",
+		"readme": "https://github.com/NeRo0311/ioBroker.nmt-emodul/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "climate-control",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
