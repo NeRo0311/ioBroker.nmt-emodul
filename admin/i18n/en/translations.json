@@ -1,5 +1,10 @@
 {
 	"nmt-emodul adapter settings": "Adapter settings for nmt-emodul",
-	"option1": "option1",
-	"option2": "option2"
+	"Options": "Options",
+	"User ID": "User ID",
+	"Enter your user ID": "Enter your user ID",
+	"Token": "Token",
+	"Enter your generated token": "Enter your generated token",
+	"Heater UDID": "Heater UDID",
+	"Enter your heater UDID": "Enter your heater UDID"
 }
